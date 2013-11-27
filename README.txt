@@ -2,7 +2,7 @@ theWorldIn35mm Theme for WordPress
 -------------------------
 
 * You can view in action for wordpress theWorldIn35mm at: 
-  http://www.etruscosphoto.it
+  http://photo.pensando.it
 
 * You can download newest releases at:
   http://www.pensando.it/wp/index.php/template
