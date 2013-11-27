@@ -1,0 +1,567 @@
+/*
+Theme Name:  theworldin35mm
+Theme URI: http://www.pensando.it/wp/index.php/template
+Description:  A Photoblog theme for <a href="http://www.wordpress.org/">Wordpress</a> using the <a href="http://johannes.jarolim.com/yapb/">Yet Another Photoblog plugin</a>, based on the original template <a href="http://www.theworldin35mm.org/">theWorldIn35mm</a> for <a href="http://www.pixelpost.org/">pixelpost</a> rewrite for wordpress by <a href="http://www.pensando.it/">Etrusco</a> 
+
+Version: 1.0.2
+Author: Etrusco
+Author URI: http://www.etruscosphoto.it/
+Tags: white, one-column, fixed-width, theme-options, photoblogging
+
+This theme was originally designed and built by Joe Roback for pixelpost platform
+Origin URI: http://theworldin35mm.org/
+Origin MAIL: template@theworldin35mm.org
+
+The CSS, XHTML and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+
+html {
+	background-color: #FFFFFF;
+	color: #a9a9a9;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #a9a9a9;
+	font: normal 11px Helvetica, "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	line-height: 16px;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+ul, li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #666;
+}
+
+h3 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 0px 0px 5px 0px;
+	text-transform: uppercase;
+}
+
+h4 {
+	margin: 0px 0px 5px 0px;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0 0 4px 0px;
+	text-align: left;
+}
+
+img {
+	border: none;
+}
+
+fieldset {
+	color: #333333;
+	border: none;
+	font-size: 10px;
+}
+
+a, a:link, a:visited {
+	color: #a9a9a9;	
+	text-decoration: none;
+}
+
+a:active, a:focus, a:hover {
+	color: #111;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+.rsaquo { font-size: 12px; }
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+
+
+/* HEADER */
+#topborder {
+	height: 0.3em;
+	background-color: #CCCCCC;
+}
+
+#header {
+	margin: 5px auto;
+	padding-top: 3px;
+	width: 100%;
+}
+
+#site-title {
+	float: left;
+	font-family: Verdana, Helvetica;
+	font-size: 13px;
+	text-align: left;
+	letter-spacing: 3px;
+	padding-left: 8px;
+}
+
+#site-title a, #site-title a:link, #site-title a:visited {
+	text-decoration: none;
+}
+
+#sub-title{
+	float: left;
+	font-family: Verdana, Helvetica;
+	font-size: 10px;
+	text-align: left;
+	letter-spacing: 2px;
+	margin: 3px 0px 0px 0px;
+	padding-left: 8px;
+	padding: 0px;
+}
+
+#menu {
+	color: #ccc;
+	float: right;
+	font-family: Verdana, Helvetica;
+	font-size: 11px;
+	letter-spacing: 3px;
+	margin: 0px;
+	padding-right: 10px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#menu ul {
+	vertical-align: bottom;
+}
+
+#menu li {
+	display: inline;
+	margin: 0px 0px 0px 0px;
+}
+
+.nav-arrow {
+	font-size: 16px;
+}
+
+/* FOOTER */
+#footer {
+	clear: both;
+	font-size: 9px;
+	line-height: 15px;
+	margin: 0px auto;
+	padding-top: 30px;
+	text-transform: uppercase;
+}
+
+#footer li {
+	display: inline;
+	padding: 0px 5px;
+	text-align: center;
+}
+
+
+/* PAGE */
+#page {
+	margin: 0px auto;
+}
+
+#page p, #page ul {
+	margin: 0px 25px 20px 0px;
+}
+
+
+/* IMAGE */
+#image-container {
+}
+
+#image-nav-links {
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 16px;
+	margin: 0px;
+	padding: 2px 6px 6px 6px;
+	text-transform: uppercase;
+}
+
+#image-nav-prevlink {
+	float: left;
+}
+
+#image-nav-nextlink {
+	float: right;
+}
+
+#image-border {
+	position: relative;
+	line-height: 0px;
+	margin: 0px auto;
+	background: transparent url(images/indicator-big-loader.gif) no-repeat 50% 50%;
+}
+
+#image-border img {}
+
+#left-td {
+	background:transparent url(images/shadow-top-left.jpg) no-repeat scroll top right;
+	width: 23px;
+}
+
+#image-info {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#image-nav-overlay {
+	PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	LEFT: 0px;
+	TOP: 0px;
+    MARGIN: 0px;
+    POSITION: absolute;
+    outline: none
+}
+
+#image-nav-overlay a,
+#image-nav-overlay a:link,
+#image-nav-overlay a:visited {
+	line-height: 0px;
+	outline: none;
+}
+
+
+#image-nav-prevoverlay {
+	background: transparent url(images/blank.gif) no-repeat;
+	Z-INDEX: 99;
+	float: left;
+	left: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+#image-nav-nextoverlay {
+	background: transparent url(images/blank.gif) no-repeat;
+	Z-INDEX: 99;
+	float: right;
+	right: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+}
+
+#image-nav-prevoverlay:active,
+#image-nav-prevoverlay:focus,
+#image-nav-prevoverlay:hover {
+	background: url(images/p_prev.png) center left no-repeat;
+	cursor: pointer;
+}
+
+#image-nav-nextoverlay:active,
+#image-nav-nextoverlay:focus,
+#image-nav-nextoverlay:hover {
+	background: url(images/p_next.png) center right no-repeat;
+	cursor: pointer;
+}
+
+.image-title {
+	font-family: Verdana;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+	text-transform: lowercase;
+}
+
+.image-date {
+	color: #ccc;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+
+.image-comment {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.image-comment a,
+.image-comment a:link,
+.image-comment a:visited {
+	color: #999;
+}
+
+.image-comment a:hover {
+	color: #111;
+}
+
+/* COMMENTS */
+#comments-container {
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+	color: #999999;
+	margin: 5px auto;
+	padding: 15px;
+	text-align: left;
+	width: 770px;
+}
+
+#comments-container h3 {
+	padding-bottom: 2px;
+}
+
+/* COMMENTS - IMAGE NOTES */
+#image-notes {
+	float: left;
+	width: 39%;
+	margin-bottom: 10px;
+}
+
+#image-notes li {
+	margin: 0px 0px 0px 4px;
+}
+
+#description, #exif {
+	margin: 0px 0px 15px 0px;
+}
+
+/* USER COMMENTS */
+#image-comments {
+	float: right;
+	width: 58%;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 10px;
+	border-left: 1px solid #E0E0E0;
+}
+
+#comments li {
+	margin: 15px 0px 20px 0px;
+}
+
+/* COMMENT FORM */
+#addcomment {
+	padding: 10px 0px;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	text-align: left;
+}
+
+.input {
+	width: 45%;
+	border: 1px solid #DDDDDD;
+	color: #888888;
+	background-color: #FFFFFF;
+	padding: 4px;
+	margin: 0px 0px 8px 0px;
+}
+
+#addcomment textarea {
+	width: 95%;
+	height: 150px;
+	border: 1px solid #DDDDDD;
+	color: #666666;
+	background-color: #FFFFFF;
+	padding: 4px;
+	margin: 0px 0px 8px 0px;
+}
+
+.comment-button {
+	border: 3px double #DDDDDD;
+	font-size: 10px;
+	color: #666666;
+	background-color: #FFFFFF;
+	text-transform: uppercase;
+	padding: 3px;
+	margin: 8px 0px 0px 0px;
+}
+
+//wp classes
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+/* COMMENT THANKS */
+#thanks {
+	padding: 0px;
+}
+
+#thanks p {
+	font-weight: bold;
+	padding: 4px 0px;
+	margin: 0px;
+}
+
+#thanks a {
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+#thanks li {
+	display: inline;
+	padding: 0px 4px 0px 0px;
+}
+
+#thanks li.last {
+	padding: 0px;
+}
+
+
+/* DOWNLOADS */
+#downloads-container {
+	padding-top: 20px;
+	text-align: left;
+	min-height: 400px;
+}
+
+#downloads-container ul {
+	padding-top: 10px;
+}
+
+#downloads-container li {
+	margin-left: 20px;
+}
+
+
+/* ABOUT */
+#about-container {
+	margin: 0px auto;
+	padding-top: 80px;
+	width: 800px;
+}
+
+#photo-self {
+	background-color: #F9F9F9;
+	border: 1px solid #E0E0E0;
+	margin: 5px 0px;
+	padding: 6px;
+}
+
+/* COLUMNS */
+#column1, #column2, #column3 {
+	float: left;
+	margin-left: 12px;
+	text-align: left;
+	width: 254px;
+}
+
+
+/* BROWSE */
+#browse-container {
+	margin: 0px auto;
+	padding: 50px 0px;
+	text-align: left;
+	width: 800px;
+}
+
+#category-container {
+	float: left;
+	width: 180px;
+	text-align: left;
+	padding: 5px;
+}
+
+#category-container ul {
+	PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    PADDING-BOTTOM: 15px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px
+}
+
+#category-container li {
+	PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 4px;
+    PADDING-TOP: 0px;
+}
+
+#category-containe H3
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 5px;
+    MARGIN: 0px;
+    PADDING-TOP: 10px
+}
+
+#thumbnail-container { 
+	padding-left: 230px;
+}
+
+a img.thumbnails,
+a:link img.thumbnails,
+a:visited img.thumbnails {
+	BORDER-RIGHT: #cccccc 1px solid;
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: #cccccc 1px solid;
+    PADDING-LEFT: 0px;
+    FLOAT: left;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 8px;
+    BORDER-LEFT: #cccccc 1px solid;
+    LINE-HEIGHT: 0px;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #cccccc 1px solid;
+    BACKGROUND-COLOR: #f5f5f5;
+    opacity: 1.0
+}
+
+a:active img.thumbnails,
+a:focus img.thumbnails,
+a:hover img.thumbnails {
+	opacity: 1.0;
+	border: 1px solid #333;
+}
+
+#more-info {
+    font-size: 0.1em;
+    color: #fff;
+}

@@ -1,0 +1,5 @@
+﻿    VERSION DATE       TYPE   CHANGES
+    1.0.0   2009/06/26 NEW    Created first versione of Template theworldin35mm
+    1.0.1   2009/06/30 UPD    Update functions.php file
+    1.0.2   2009/06/30 UPD    Bug Fix on functions.php file
+
